@@ -12,3 +12,17 @@ print(players[2:]) # 止于末尾
 print(players[-3:]) # 从倒数第3个开始
 
 # 遍历切片
+for player in players[:3]:
+    print(player.title())
+
+# 复制列表
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+
+print("My favorite foods are:")
+print(my_foods)
+print("\nMy friend favorite foods are:")
+print(friend_foods)
