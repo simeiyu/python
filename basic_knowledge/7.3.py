@@ -50,3 +50,32 @@ while polling_active:
 print('\n---- Poll Results ----')
 for name, response in responses.items():
     print(name +' would like to climb ' + response + '.')
+
+'''
+动手试一试
+'''
+# 熟食店
+sandwich_orders = ['one egg', 'miles', 'fruits', 'shucai']
+finished_sandwiches = []
+while sandwich_orders:
+    sandwich_removed = sandwich_orders.pop(0)
+    print('I made your ' + sandwich_removed + ' sandwich.')
+    finished_sandwiches.append(sandwich_removed)
+
+print(sandwich_orders)
+print(finished_sandwiches)
+
+# 梦想的度假胜地
+resorts = {}
+asking = True
+while asking:
+    name = input('What is your name?')
+    question = input('If you could visit one place in the world, where would you go?')
+    resorts[name] = question
+    go_on = input('Would you like to let another person respond? (yes/ no)')
+    if go_on == 'no':
+        asking = False
+
+for name, resort in resorts:
+    print(name + ' would like to go ' + resort + '.')
+    
