@@ -55,7 +55,7 @@ for name, response in responses.items():
 动手试一试
 '''
 # 熟食店
-sandwich_orders = ['one egg', 'miles', 'fruits', 'shucai']
+sandwich_orders = ['one egg', 'pastrami', 'miles', 'pastrami', 'fruits', 'pastrami', 'shucai']
 finished_sandwiches = []
 while sandwich_orders:
     sandwich_removed = sandwich_orders.pop(0)
