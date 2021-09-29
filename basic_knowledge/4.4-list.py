@@ -13,6 +13,8 @@ print(players[-3:]) # 从倒数第3个开始
 
 # 遍历切片
 for player in players[:3]:
+    print("\n------> index:")
+    print(player.index)
     print(player.title())
 
 # 复制列表

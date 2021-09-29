@@ -94,3 +94,5 @@ if kids:
             kid['city'] + '.')
     
     print("Welcome these " + str(len(kids)) + " new students.")
+
+

@@ -34,6 +34,28 @@ print(sum(squares))
 squares = [value ** 2 for value in range(1, 11)]
 print('列表解析：' + str(squares))
 
+
+inputData = [{
+  "code": 0,
+  "data": {
+    "result": [["1", "2", "3"]],
+    "pageSize": 20,
+    "pageCount": 12,
+    "currentPage": 11,
+    "total": 123
+  }
+}, {
+  "code": 0,
+  "data": {
+    "result": [["a", "b", "c"]],
+    "pageSize": 10,
+    "pageCount": 2,
+    "currentPage": 1,
+    "total": 123
+  }
+}]
+{f"out{k[-1]}": {"pageSize": v["data"]["pageSize"], "pageCount": v["data"]["pageCount"], "currentPage": v["data"]["currentPage"]} for k, v in locals().items() if k.startswith("inputData") and v}
+
 '''
 动手试一试
 '''
